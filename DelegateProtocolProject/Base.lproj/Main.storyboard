@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intern View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InternViewController" customModule="DelegateProtocolProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-Gz-zLS">
+                                <rect key="frame" x="99" y="747" width="216" height="31"/>
+                                <color key="tintColor" red="0.094117648900000003" green="0.1215686351" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <connections>
+                                    <action selector="clickStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f42-VG-rEo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngfind.com-dog-paw-print-png-831762" translatesAutoresizingMaskIntoConstraints="NO" id="ckX-Wq-JpR">
+                                <rect key="frame" x="70" y="134" width="274" height="446"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="446" id="WrI-dr-d3C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.57715586965111221" green="0.6771900859089387" blue="0.7430734536082475" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ckX-Wq-JpR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EiM-jN-bIs"/>
+                            <constraint firstItem="ckX-Wq-JpR" firstAttribute="centerX" secondItem="ruu-Gz-zLS" secondAttribute="centerX" id="Ucp-Vf-tE5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ruu-Gz-zLS" secondAttribute="bottom" constant="84" id="XkA-wL-btd"/>
+                            <constraint firstItem="ckX-Wq-JpR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="k7z-pm-aCH"/>
+                            <constraint firstItem="ruu-Gz-zLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="kBA-oT-Gqd"/>
+                            <constraint firstItem="ckX-Wq-JpR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="vzW-l1-9Y9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clickStartButton" destination="ruu-Gz-zLS" id="yNn-4b-lby"/>
+                        <outlet property="updateImage" destination="ckX-Wq-JpR" id="5fB-9N-m8V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="112.5"/>
+        </scene>
+        <!--Boss View Controller-->
+        <scene sceneID="KcG-Li-2WU">
+            <objects>
+                <viewController storyboardIdentifier="BossVC" id="dsx-eh-FRn" customClass="BossViewController" customModule="DelegateProtocolProject" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nhv-jf-gcj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clipart1123101" translatesAutoresizingMaskIntoConstraints="NO" id="13G-AV-XNH">
+                                <rect key="frame" x="10.5" y="204" width="393" height="162"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeekPng.com_dog-paw-png_148549" translatesAutoresizingMaskIntoConstraints="NO" id="VX9-kN-Egc">
+                                <rect key="frame" x="33" y="464" width="348" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="Ylj-Rw-ioq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICK A PAW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dD-cI-Xta">
+                                <rect key="frame" x="108" y="72" width="198" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="tgG-Td-XMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.16495466589999999" green="0.3849821007" blue="0.74307345359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xGL-0x-wqg"/>
+                        <color key="backgroundColor" red="0.57715586969999999" green="0.67719008589999996" blue="0.74307345359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4dD-cI-Xta" firstAttribute="centerX" secondItem="13G-AV-XNH" secondAttribute="centerX" id="2nn-yQ-Ome"/>
+                            <constraint firstItem="4dD-cI-Xta" firstAttribute="leading" secondItem="xGL-0x-wqg" secondAttribute="leading" constant="108" id="3fA-MY-eeB"/>
+                            <constraint firstItem="4dD-cI-Xta" firstAttribute="centerX" secondItem="VX9-kN-Egc" secondAttribute="centerX" id="8RT-9g-U0Z"/>
+                            <constraint firstItem="xGL-0x-wqg" firstAttribute="bottom" secondItem="VX9-kN-Egc" secondAttribute="bottom" constant="212" id="E9B-PH-aBS"/>
+                            <constraint firstItem="4dD-cI-Xta" firstAttribute="top" secondItem="xGL-0x-wqg" secondAttribute="top" constant="28" id="LzN-v8-KTl"/>
+                            <constraint firstItem="VX9-kN-Egc" firstAttribute="top" secondItem="13G-AV-XNH" secondAttribute="bottom" constant="98" id="MXv-Eu-ylk"/>
+                            <constraint firstItem="4dD-cI-Xta" firstAttribute="centerX" secondItem="Nhv-jf-gcj" secondAttribute="centerX" id="gta-if-IlC"/>
+                            <constraint firstItem="VX9-kN-Egc" firstAttribute="leading" secondItem="xGL-0x-wqg" secondAttribute="leading" constant="33" id="gxL-FL-AeF"/>
+                            <constraint firstItem="13G-AV-XNH" firstAttribute="top" secondItem="4dD-cI-Xta" secondAttribute="bottom" constant="84" id="keZ-Jf-vrl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catPawImage" destination="13G-AV-XNH" id="x3S-gm-kzc"/>
+                        <outlet property="dogPawImage" destination="VX9-kN-Egc" id="THg-7b-PlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npg-HA-hbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SeekPng.com_dog-paw-png_148549" width="690" height="792"/>
+        <image name="clipart1123101" width="393" height="393"/>
+        <image name="pngfind.com-dog-paw-print-png-831762" width="535" height="680"/>
+    </resources>
+</document>
